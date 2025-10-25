@@ -4,6 +4,7 @@
 .RData
 .Ruserdata
 *.Rproj
+.Rapp.history
 
 # Data files (keep generated datasets local, don't commit to git)
 data/*.rda
