@@ -1,0 +1,425 @@
+[
+  {
+    "dataset_name": "adsl",
+    "variable_name": "STUDYID",
+    "label": "Study Identifier",
+    "type": "character",
+    "length": 20,
+    "derivation": "From DM.STUDYID",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "USUBJID",
+    "label": "Unique Subject Identifier",
+    "type": "character",
+    "length": 40,
+    "derivation": "From DM.USUBJID",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "SUBJID",
+    "label": "Subject Identifier for the Study",
+    "type": "character",
+    "length": 20,
+    "derivation": "From DM.SUBJID",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "SITEID",
+    "label": "Study Site Identifier",
+    "type": "character",
+    "length": 10,
+    "derivation": "From DM.SITEID",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "AGE",
+    "label": "Age",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From DM.AGE",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "SEX",
+    "label": "Sex",
+    "type": "character",
+    "length": 1,
+    "derivation": "From DM.SEX",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "RACE",
+    "label": "Race",
+    "type": "character",
+    "length": 50,
+    "derivation": "From DM.RACE",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "COUNTRY",
+    "label": "Country",
+    "type": "character",
+    "length": 3,
+    "derivation": "From DM.COUNTRY",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "ARM",
+    "label": "Description of Planned Arm",
+    "type": "character",
+    "length": 40,
+    "derivation": "From DM.ARM",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "ARMCD",
+    "label": "Planned Arm Code",
+    "type": "character",
+    "length": 20,
+    "derivation": "From DM.ARMCD",
+    "source": "pharmaversesdtm::dm"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "TRT01P",
+    "label": "Planned Treatment for Period 01",
+    "type": "character",
+    "length": 40,
+    "derivation": "ARM",
+    "source": "Derived"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "TRT01A",
+    "label": "Actual Treatment for Period 01",
+    "type": "character",
+    "length": 40,
+    "derivation": "ARM",
+    "source": "Derived"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "TRTSDT",
+    "label": "Date of First Exposure to Treatment",
+    "type": "date",
+    "length": 10,
+    "derivation": "min(EX.EXSTDTC)",
+    "source": "pharmaversesdtm::ex"
+  },
+  {
+    "dataset_name": "adsl",
+    "variable_name": "TRTEDT",
+    "label": "Date of Last Exposure to Treatment",
+    "type": "date",
+    "length": 10,
+    "derivation": "max(EX.EXENDTC)",
+    "source": "pharmaversesdtm::ex"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "STUDYID",
+    "label": "Study Identifier",
+    "type": "character",
+    "length": 20,
+    "derivation": "From AE.STUDYID",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "USUBJID",
+    "label": "Unique Subject Identifier",
+    "type": "character",
+    "length": 40,
+    "derivation": "From AE.USUBJID",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AESEQ",
+    "label": "Sequence Number",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From AE.AESEQ",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AETERM",
+    "label": "Reported Term for the Adverse Event",
+    "type": "character",
+    "length": 200,
+    "derivation": "From AE.AETERM",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AESTDTC",
+    "label": "Start Date/Time of Adverse Event",
+    "type": "character",
+    "length": 20,
+    "derivation": "From AE.AESTDTC",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AEENDTC",
+    "label": "End Date/Time of Adverse Event",
+    "type": "character",
+    "length": 20,
+    "derivation": "From AE.AEENDTC",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AESEV",
+    "label": "Severity/Intensity",
+    "type": "character",
+    "length": 20,
+    "derivation": "From AE.AESEV",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "AESER",
+    "label": "Serious Event",
+    "type": "character",
+    "length": 1,
+    "derivation": "From AE.AESER",
+    "source": "pharmaversesdtm::ae"
+  },
+  {
+    "dataset_name": "adae",
+    "variable_name": "TRTEMFL",
+    "label": "Treatment Emergent Analysis Flag",
+    "type": "character",
+    "length": 1,
+    "derivation": "AESTDT >= TRTSDT",
+    "source": "Derived"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "STUDYID",
+    "label": "Study Identifier",
+    "type": "character",
+    "length": 20,
+    "derivation": "From VS.STUDYID",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "USUBJID",
+    "label": "Unique Subject Identifier",
+    "type": "character",
+    "length": 40,
+    "derivation": "From VS.USUBJID",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSSEQ",
+    "label": "Sequence Number",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From VS.VSSEQ",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSTESTCD",
+    "label": "Vital Signs Test Short Name",
+    "type": "character",
+    "length": 8,
+    "derivation": "From VS.VSTESTCD",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSTEST",
+    "label": "Vital Signs Test Name",
+    "type": "character",
+    "length": 40,
+    "derivation": "From VS.VSTEST",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSORRES",
+    "label": "Result or Finding in Original Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From VS.VSORRES",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSORRESU",
+    "label": "Original Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From VS.VSORRESU",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSSTRESN",
+    "label": "Numeric Result/Finding in Standard Units",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From VS.VSSTRESN",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VSSTRESU",
+    "label": "Standard Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From VS.VSSTRESU",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VISITNUM",
+    "label": "Visit Number",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From VS.VISITNUM",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "VISIT",
+    "label": "Visit Name",
+    "type": "character",
+    "length": 40,
+    "derivation": "From VS.VISIT",
+    "source": "pharmaversesdtm::vs"
+  },
+  {
+    "dataset_name": "advs",
+    "variable_name": "CHG",
+    "label": "Change from Baseline",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "AVAL - BASE",
+    "source": "Derived"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "STUDYID",
+    "label": "Study Identifier",
+    "type": "character",
+    "length": 20,
+    "derivation": "From LB.STUDYID",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "USUBJID",
+    "label": "Unique Subject Identifier",
+    "type": "character",
+    "length": 40,
+    "derivation": "From LB.USUBJID",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBSEQ",
+    "label": "Sequence Number",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From LB.LBSEQ",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBTESTCD",
+    "label": "Lab Test Short Name",
+    "type": "character",
+    "length": 8,
+    "derivation": "From LB.LBTESTCD",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBTEST",
+    "label": "Lab Test Name",
+    "type": "character",
+    "length": 40,
+    "derivation": "From LB.LBTEST",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBORRES",
+    "label": "Result or Finding in Original Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From LB.LBORRES",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBORRESU",
+    "label": "Original Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From LB.LBORRESU",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBSTRESN",
+    "label": "Numeric Result in Standard Units",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From LB.LBSTRESN",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "LBSTRESU",
+    "label": "Standard Units",
+    "type": "character",
+    "length": 20,
+    "derivation": "From LB.LBSTRESU",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "VISITNUM",
+    "label": "Visit Number",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "From LB.VISITNUM",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "VISIT",
+    "label": "Visit Name",
+    "type": "character",
+    "length": 40,
+    "derivation": "From LB.VISIT",
+    "source": "pharmaversesdtm::lb"
+  },
+  {
+    "dataset_name": "adlb",
+    "variable_name": "CHG",
+    "label": "Change from Baseline",
+    "type": "numeric",
+    "length": 8,
+    "derivation": "AVAL - BASE",
+    "source": "Derived"
+  }
+]
